@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form id="password-form" action="http://localhost:8080/admin" method="GET">
+    <input type="password" placeholder="Enter password" id="password-input">
+    <button type="submit" onclick="checkPassword()">Submit</button>
+
+    <script>
+        function checkPassword() {
+            // Get the password input value
+            var password = document.getElementById("password-input").value;
+
+            // Check if password is correct
+            if (password == "mypassword") {
+                // Redirect to new page
+                window.location.href = "http://localhost:8080/admin";
+                return true;
+            } else {
+                alert("Incorrect password. Please try again.");
+                return false;
+            }
+        }
+    </script>
+</form>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Library Readers</title>
+    <link rel="stylesheet" type="text/css" href="style.html">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        table {
+            margin: 30px auto;
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 1000px;
+            background-color: #fff;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .center-btn {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+<h1>Saturn Library </h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Citizen</th>
+        <th>Phone Number</th>
+        <th>Note Area</th>
+        <th>Creation Time</th>
+    </tr>
+    <tr th:each="reader : ${readers}">
+        <td th:text="${reader.name}"></td>
+        <td th:text="${reader.age}"></td>
+        <td th:text="${reader.citizen}"></td>
+        <td th:text="${reader.phoneNumber}"></td>
+        <td th:text="${reader.noteArea}"></td>
+        <td th:text="${reader.creationTime}"></td>
+    </tr>
+</table>
+
+<div class="container">
+    <a href="http://localhost:63342/Saturn/templates/index.html"
+       class="center-btn">Back to Home</a>
+
+</div>
+
+</body>
+</html>
+

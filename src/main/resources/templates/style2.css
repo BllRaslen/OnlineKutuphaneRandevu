@@ -1,0 +1,21 @@
+.homepage-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.homepage-link a {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.homepage-link a:hover {
+    background-color: #0062cc;
+    border-color: #005cbf;
+}

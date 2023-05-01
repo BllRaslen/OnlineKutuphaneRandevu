@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Success</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        /* Use a CSS reset to remove default browser styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Add some padding to the body */
+        body {
+            padding: 20px;
+            background: #f0f0f0;
+
+        }
+
+        /* Use a CSS grid for layout */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            justify-items: center;
+            align-items: center;
+            height: 100vh;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        /* Style the success message */
+        .success-message {
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+            border-radius: .25rem;
+            border: 1px solid transparent;
+            color: #155724;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Style the button */
+        .center-btn {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        /* Add a hover effect to the button */
+        .center-btn:hover {
+            background-color: #0069d9;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <div class="success-message">
+        <h2>Successfully Registered!</h2>
+        <p>Thank you for registering with us.</p>
+    </div>
+
+    <a href="http://localhost:63342/Saturn/templates/index.html"
+       class="center-btn">Back to Home</a>
+</div>
+
+</body>
+</html>
